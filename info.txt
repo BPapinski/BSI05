@@ -1,0 +1,5 @@
+co naprawiono względem ostatnich zajęć:
+
+    - nr mieszkania moze być pusty
+    - ulica moze zawierac rownież cyfry // np Aleja 3 Maja
+    - nazwa miasta moze zawierac wiele wyrazow
