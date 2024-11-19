@@ -44,24 +44,20 @@
         <h1>Przykładowe Boxy na Kod PHP</h1>
         
         <div class="php-box">
-            <!-- Placeholder na kod PHP -->
-            &lt;?php // Twój kod tutaj ?>
+            &lt;?php // placeholder ?>
         </div>
 
         <div class="php-box">
-            <!-- Placeholder na kod PHP -->
-            &lt;?php // Twój kod tutaj ?>
+            &lt;?php // placeholder ?>
         </div>
 
         formhandler
         <div class="php-box">
-            <!-- Placeholder na kod PHP -->
-            &lt;?php // Twój kod tutaj ?>
+            &lt;?php // placeholder ?>
         </div>
 
         login.php<br>
         <div class="php-box">
-            <!-- Wklejony kod -->
             &lt;!DOCTYPE html&gt;<br>
             &lt;html lang="en"&gt;<br>
             &lt;head&gt;<br>

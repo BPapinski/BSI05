@@ -8,7 +8,7 @@
         if($login == "Login" && $password == "Haslo123!"){
             $_SESSION["loggedIn"] = true;
             header("Location: ../index.php");
-            exit(); // Zatrzymanie dalszego wykonywania
+            exit(); 
         }
     }
     else{

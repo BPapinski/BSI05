@@ -41,7 +41,6 @@ function Logout() {
         });
 }
 
-
 function Validate(){
     var validName = ValidateName();
     var validSurname = ValidateSurname();

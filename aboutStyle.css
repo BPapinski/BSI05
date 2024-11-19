@@ -29,7 +29,7 @@ p{
     background-color: antiquewhite;
     padding: 10px;
     margin: 5px;
-    flex: 1; /* Ustawienie elastycznego wzrostu */
+    flex: 1; 
     text-align: center;
 }
 
@@ -54,6 +54,8 @@ input{
     border-radius: 4px;
     cursor: pointer;
   }
+
+  
 
   .go-back-container{
     padding: 20px;
