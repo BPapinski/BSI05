@@ -92,9 +92,9 @@
                 <input type="text" id="login" name="login" placeholder="Login..." value="Login">
             </div>
             <div class="form-item" id="form-password">
-                <label><p>Hasło</p></label>
+                <label><p>Password</p></label>
                 <input id="haslo" type="password" name="haslo" value="Haslo123!">
-            </div>  
+            </div>
             <div>
                 <input type="submit" value="Submit">
             </div>         

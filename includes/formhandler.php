@@ -108,7 +108,7 @@
         <p><span>Miasto:</span> <?php echo $city; ?></p>
         <p><span>Państwo:</span> <?php echo $country; ?></p>
 
-        <button onclick="window.history.back()">Powrót</button>
+        <button onclick="window.history.back()">Back</button>
     </div>
 </body>
 </html>

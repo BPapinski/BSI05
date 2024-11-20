@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stylized Form</title>
     <style>
-        /* Ogólne style */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -98,7 +97,7 @@
     <?php 
         session_start();
         if (!isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"] !== true) {
-            header("Location: login.php"); // Przekieruj na login jeśli nie jest zalogowany
+            header("Location: login.php"); 
             exit();
         }
     ?>

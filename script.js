@@ -10,7 +10,7 @@ function Login() {
 
     var isValid = true;
 
-    // Sprawdzenie loginu
+
     if (loginValue !== "Login") {
         loginInput.classList.add("input-red");
         isValid = false;
@@ -18,7 +18,6 @@ function Login() {
         loginInput.classList.remove("input-red");
     }
 
-    // Sprawdzenie hasła
     if (passwordValue !== "Haslo123!") {
         passwordInput.classList.add("input-red");
         isValid = false;
@@ -30,10 +29,8 @@ function Login() {
 }
 
 function Logout() {
-    // Używamy AJAX do wysłania zapytania do pliku logout.php
     fetch('logout.php')
         .then(response => {
-            // Po zakończeniu wylogowywania, przekierowujemy użytkownika do strony logowania
             window.location.href = 'login.php';
         })
         .catch(error => {
@@ -280,11 +277,6 @@ function ValidatePassword() {
     var inputValue = document.getElementById("haslo").value;
     var input = document.getElementById("haslo");
     var pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
-    // (?=x - oznacza ze x ma byc spelniony
-    // .* - oznacza dowolny znak powtarzający 0 lub więcej razy
-    // \d - oznacza cyfre ----> to samo co [0-9]
-    // \W dowolny znak ,   \W_ dowonlu znak lub podłoga
-    //.{8,} - minimum 8 znaków
     var wynik = pattern.test(inputValue);
     var container = document.getElementById("form-password");
     var errorParagraph = document.getElementById("error-haslo");
