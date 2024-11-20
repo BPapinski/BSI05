@@ -135,7 +135,7 @@
             </div>
             <div class="form-item" id="form-license">
                 <label><p>Czy posiadasz prawo jazdy?</p></label>
-                <input type="checkbox">
+                <input type="checkbox" id="prawoJazdy" name="prawoJazdy">
             </div>
             <div class="form-item" id="form-password">
                 <label><p>Hasło</p></label>
