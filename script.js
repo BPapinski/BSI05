@@ -269,6 +269,37 @@ function ValidateDate() {
     }
 }
 
+function ValidateDate() {
+    var input = document.getElementById("dataUrodzenia");
+    var inputValue = input.value;
+    var container = document.getElementById("form-date");
+    var errorParagraph = document.getElementById("error-dataUrodzenia");
+
+    var today = new Date();
+    today.setDate(today.getDate() - 1);
+    var maxDate = today.toISOString().split('T')[0];
+
+    if (inputValue && inputValue <= maxDate) {
+        console.log("Data jest poprawna.");
+        input.classList.remove("input-red");
+        if (errorParagraph) {
+            container.removeChild(errorParagraph);
+        }
+        return true;
+    } else {
+        console.log("Data jest niepoprawna.");
+        if (!errorParagraph) {
+            errorParagraph = document.createElement("p");
+            errorParagraph.id = "error-dataUrodzenia";
+            errorParagraph.textContent = "Podana data jest niepoprawna lub późniejsza niż wczoraj.";
+            container.appendChild(errorParagraph);
+        }
+        input.classList.add("input-red");
+        return false;
+    }
+}
+
+
 
 
 

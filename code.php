@@ -167,7 +167,7 @@
             ?&gt;
         </div>
 
-        <a href="http://bpapinski.cba.pl/">back</a>
+        <a href="http://bpapinski2.cba.pl/">back</a>
     </div>
 </body>
 </html>

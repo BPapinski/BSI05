@@ -128,9 +128,16 @@
                 <input type="number" id="nrTelefonu" name="nrTelefonu" placeholder="Podaj Numer Telefonu..." value="123123123">
             </div>
             <div class="form-item" id="form-date">
-                <label><p>Podaj Datę Urodzenia:</p></label>
-                <input id="dataUrodzenia" type="datetime-local" name="dataUrodzenia" value="2024-11-18T00:00" 
-                    max="<?php echo date('Y-m-d\TH:i', strtotime('yesterday')); ?>">
+                <label>
+                    <p>Podaj Datę Urodzenia:</p>
+                </label>
+                <input 
+                    id="dataUrodzenia" 
+                    type="date" 
+                    name="dataUrodzenia" 
+                    value="2024-11-18" 
+                    max="<?php echo date('Y-m-d', strtotime('yesterday')); ?>"
+                >
             </div>
             <div class="form-item" id="form-license">
                 <label><p>Czy posiadasz prawo jazdy?</p></label>
